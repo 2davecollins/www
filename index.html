@@ -1,26 +1,27 @@
 <!DOCTYPE html>
+<!--Test Git Push -->
 <html>
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="format-detection" content="telephone=no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
 <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"/>-->
 <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-    
+
      <script src="js/jQuery/jquery-1.11.1.min.js"></script>
      <script src="js/jQuery/jquery-ui.min.js"></script>
      <script src="js/jQuery/jquery.tmpl.min.js"></script>
      <script src="js/jQuery/jstorage.min.js"></script>
-           
+
      <script type="text/javascript">
       	$(document).bind("mobileinit",function() {
 			$.support.cors = true;
 			$.mobile.allowCrossDomainPages = true;
 		});
      </script>
-    
+
       <link rel="stylesheet" href="js/jQuery/themes/rowtheme2.min.css" />
       <script src="js/jQuery/jquery.mobile-1.3.2.min.js"></script>
       <script src="js/jQuery/jquery.jsonp-2.4.0.min.js"></script>
@@ -30,20 +31,20 @@
       <!-- production code ensure latest minified code used -->
       <link rel="stylesheet" type="text/css" href="css/override.css">
       <!--<link rel="stylesheet" type="text/css" href="css/override-min.css">-->
-      
+
       <script type="text/javascript" src="js/jQuery/flot/jquery.flot.js"></script>
-      <script type="text/javascript" src="js/jQuery/flot/jquery.flot.time.js"></script>   
+      <script type="text/javascript" src="js/jQuery/flot/jquery.flot.time.js"></script>
       <script type="text/javascript" src="js/jQuery/flot/jquery.flot.symbol.js"></script>
       <script type="text/javascript" src="js/jQuery/flot/jquery.flot.resize.js"></script>
       <script type="text/javascript" src="js/jQuery/flot/excanvas.min.js"></script>
       <script src="js/jQuery/datetime/jquery.datetimepicker.js"></script>
       <script src="js/jQuery/datetime/jquery.timepicker.js"></script>
       <link rel="stylesheet" type="text/css" href="js/jQuery/datetime/jquery.timepicker.css">
-      <link rel="stylesheet" type="text/css" href="js/jQuery/datetime/jquery.datetimepicker.css">         
+      <link rel="stylesheet" type="text/css" href="js/jQuery/datetime/jquery.datetimepicker.css">
       <link rel="stylesheet" type="text/css" href="js/jQuery/datetime/jqm-datebox.css">
-      
+
     <style>
-		@media only screen 
+		@media only screen
 		and (min-device-width: 320px)
 		and (max-device-width: 710px)
 		{
@@ -52,7 +53,7 @@
 			float:left;
 			}
 		}
-		@media only screen 
+		@media only screen
 		and (min-device-width: 720px)
 		{
 			img{
@@ -70,7 +71,7 @@
 	 }
      </script>
    <title>RowCatcher</title>
-  </head>  
+  </head>
 <body onUnload="onUnLoad()">
 <div data-role="page" id="startpage" data-theme="e">
   <div data-role="header" data-theme="b">
@@ -82,10 +83,10 @@
    <!--header-->
   <div data-role="content" data-theme="e">
    <div id="images"></div>
-   <div class="app"></div>         
+   <div class="app"></div>
    <div class="loading" id="loading">Loading from web</div>
    <div class="entryMsg" id="entryMessage"></div>
-  
+
    <div data-role="popup" id="popupDInvalid" class="ui-content" data-transition="slide" data-theme="a" >
     <h4>Sorry</h4>
     <p>Please Check Your Credentials and Try again </p>
@@ -151,12 +152,12 @@
      <li><a id="democonstraints" data-role="button" href="#mySession" data-theme="f">Proceed</a></li>
      <li><a id="regbenefits" data-role="button" href="#" data-theme="f">Register</a></li>
     </ul>
-    </div> 
+    </div>
     </div>
    <div data-role="footer"></div>
     </div>
    </div><!--page-->
-   
+
  <div data-role="page" id="shortregisterpage" data-theme="e">
   <div data-role="header" data-theme="b">
    <h1>Registration Form</h1>
@@ -197,7 +198,7 @@
       <li><a data-role="button" href="#NotReg" data-rel="dialog" id="startdemo" data-theme="f">Try Out</a></li>
       <li></li>
       <li><a data-role="button"  href="#" data-theme="b" data-icon="arrow-r" data-inline="true" data-mini="true" class="exitApplication">LogOut</a></li>
-      
+
       </ul>
       </div>
       </div><!--navbar-->
@@ -227,7 +228,7 @@
        <div class="ui-block-c"><br>Connected</div>
        <div class="ui-block-d"><br>HR found</div>
       </div>-->
-     </div> 
+     </div>
       <div id="blutoothstatus"></div>
        <div id="messageTitle"></div>
         <div class="ui-grid-b">
@@ -247,23 +248,23 @@
         <a id="bp" data-role="button"  href="#settings" data-theme="f">Done</a>
       </div>
      <div data-role="footer" data-theme="b">
-       
+
      </div>
    </div>
-   
+
 
   <div data-role="page" id="api" data-theme="e">
      <div data-role="header" data-theme="b">
        <h1>API</h1>
      </div>
      <div data-role="content" data-theme="e" >
-     
+
      <!--<div id="chartContainer" style="max-width:800px;height: 400px;"></div>-->
      <div id="chart1" style="height:400px;width:500px; "></div>
      <div id="chart2"></div>
      <h2>message</h2><div id="message1"></div>
       <a href="#" data-role="button" data-transition="slideup" id="getLoc" data-theme="f"> Get Location</a>
-     
+
      </div>
      <div data-role="footer" data-theme="b">
        <h4>API</h4>
@@ -342,18 +343,18 @@
       </div>
     </div><!--content-->
     <div data-role="footer" data-position="fixed" data-theme="b">
-      
+
      <div data-role="navbar">
       <ul>
       <li><a data-role="button"  href="#results" data-theme="b" data-icon="refresh" data-inline="true" data-mini="true">History</a></li>
-     
+
       <li><a data-role="button"  href="#settings" data-theme="b" data-icon="gear" data-inline="true" data-mini="true">Settings</a></li>
        <li><a data-role="button"  href="#" data-theme="b" data-icon="arrow-r" data-inline="true" data-mini="true" class="exitApplication">LogOut</a></li>
      </ul>
     </div><!--navbar-->
     </div><!--footer-->
   </div><!--page-->
-   
+
    <div data-role="page" id="results" data-theme="e">
      <div data-role="header" data-theme="b">
        <h1>Results</h1>
@@ -410,10 +411,10 @@
     </div><!--navbar-->
      </div><!-- footer -->
    </div><!--page-->
-   
-    
-    
-   
+
+
+
+
    <div data-role="page" id="dashboard" data-theme="e" data-fullscreen="true">
      <div data-role="content" data-theme="e" >
      <div data-role="popup" id="popupquota" class="ui-content" data-transition="slide" data-theme="e"  style="min-width:300px" >
@@ -442,7 +443,7 @@
       <a href="#startpage" data-role="button" data-theme="b" data-inline="true" data-mini="true">Cancel</a>
       </div>
       </div>
-     
+
    </div>
      <div class="border4">
        <div class="ui-grid-b">
@@ -493,7 +494,7 @@
         <br />
         <div class="large" id="stroke"></div>
         <br/>
-        
+
        </div>
       </div>
       <br/>
@@ -522,7 +523,7 @@
      <!--<div id="quotad"></div>-->
      </div>
     </div>
-     <div id="selectp"></div>     
+     <div id="selectp"></div>
      <!--<div id="messageDis" class="msg"><h2></h2></div>-->
      <!--<div id="msgAcc" class="msg"></div>-->
      <!--<div id="msgGeo" class="msg"></div>-->
@@ -534,7 +535,7 @@
      <div id="ct1"><h3 class="heading"></h3></div>
      <span class="content"></span>
     </div>
-    
+
   </div><!--content-->
  </div><!--page-->
 
@@ -559,7 +560,7 @@
      <div class="ui-block-a"></div>
      <div class="ui-block-b"></div>
      <br/>
-     <br/>    
+     <br/>
     </div>
     <div data-role="footer" data-theme="b" data-position="fixed">
      <div data-role="navbar">
@@ -616,7 +617,7 @@
 
       </fieldset>
      </div>
-    
+
        <div data-role="collapsible" data-collapsed="true">
         <h3>Beep on Piece End</h3>
          <div data-role="fieldcontain" data-theme="b">
@@ -626,9 +627,9 @@
           <option value="true">On</option>
          </select>
         </div>
-         
+
        </div>
-    
+
      <div data-role="collapsible" data-collapsed="true" >
       <h3>Storage</h3>
       <div id="storageUsed"></div>
@@ -675,7 +676,7 @@
          <div id="versionno"></div>
        </div>
      </div>
-    
+
     <div data-role="footer" data-position="fixed" data-theme="b">
      <div data-role="navbar">
      <ul>
@@ -683,7 +684,7 @@
        <li><a data-role="button"  href="#mySession" data-theme="b" data-icon="home" data-inline="true" data-mini="true">Sessions</a></li>
        <li></li>
        <li><a data-role="button"  href="#" data-theme="b" data-icon="arrow-r" data-inline="true" data-mini="true" class="exitApplication">LogOut</a></li>
-      
+
 
       </ul>
      </div>
@@ -715,13 +716,13 @@
       <li>Using Previous Data</li>
      </ul>
    </div><!--popup-->
-   
+
   </div><!--content-->
   <div data-role="footer" data-position="fixed" data-theme="b">
     <div data-role="navbar">
      <ul>
      <li> <a href="#" id="diaryentry" data-role="button" data-theme="b" data-icon="grid" data-inline="true" data-mini="true">Diary</a></li>
-     
+
       <li><a data-role="button"  href="#results" data-theme="b" data-icon="info" data-inline="true" data-mini="true">History</a></li>
       <li><a data-role="button"  href="#settings" data-theme="b" data-icon="gear" data-inline="true" data-mini="true">Settings</a></li>
        <li><a data-role="button"  href="#" data-theme="b" data-icon="arrow-r" data-inline="true" data-mini="true" class="exitApplication">LogOut</a></li>
@@ -729,7 +730,7 @@
     </div><!--navbar-->
    </div><!--footer-->
   </div><!--page-->
-  
+
   <div data-role="page" id="setpiece" data-theme="e">
     <div data-role="header" data-theme="b">
       <h1>Create Piece</h1>
@@ -794,7 +795,7 @@
                 </div>
                 <div class="ui-block-d">
                 </div>
-                
+
                <div class="ui-block-a"><p>Rest</p></div>
                <div class="ui-block-b">
                <a href="#" id="HrsUpRest" data-role="button" data-icon="arrow-u" data-iconpos="top" data-theme="a"></a>
@@ -825,7 +826,7 @@
               <div class="ui-block-b"><p><b>X</b></p></div>
               <div class="ui-block-c"><input class="centerDiv" id="DisRepeat" name="DisRepeat" type="number" ></div>
               <div class="ui-block-d"><p class="centerDiv">meters</p></div>
-              
+
                <div class="ui-block-a"><p>Rest</p></div>
                <div class="ui-block-b">
                <a href="#" id="HrsUpDistRest" data-role="button" data-icon="arrow-u" data-iconpos="top" data-theme="a"></a>
@@ -842,7 +843,7 @@
                 <input class="centerDiv" id="DistSecsRest" name="DistSecsRest" type="number" readonly>
                 <a href="#" id="SecsDwnDistRest" data-role="button" data-icon="arrow-d" data-iconpos="bottom" data-theme="a"></a>
                </div>
-             
+
               </fieldset>
              <!-- <a href="#" id="DistICreatePiece" data-role="button">Ok</a>-->
            </div><!--collapsible distance-->
@@ -876,10 +877,10 @@
             </fieldset>
            <!-- <a href="#" id="Targetdata" data-role="button">Ok</a>-->
           </div>
-          
+
         </div>
          <a href="#" id="CreatePiece" data-role="button" data-theme="f">Click to Modify Favorites</a>
-       </div> 
+       </div>
     </div><!--content-->
     <div data-role="footer" data-position="fixed" data-theme="b">
      <div data-role="navbar">
@@ -985,7 +986,7 @@
       <li><a data-role="button"  href="#settings" data-theme="b" data-icon="gear" data-inline="true" data-mini="true">Settings</a></li>
       <li><a data-role="button"  href="#" data-theme="b" data-icon="arrow-r" data-inline="true" data-mini="true" class="exitApplication">LogOut</a></li>
      </ul>
-    
+
     </div><!--navbar-->
     </div><!--footer-->
   </div><!--page-->
@@ -1022,7 +1023,7 @@
      <div>
      <ul data-role="listview" data-insert="true" id="tweets"></ul>
      </div>
-     
+
     </div><!--content-->
     <div data-role="footer" data-theme="b">
       <h4>Footer</h4>
@@ -1071,10 +1072,10 @@
     </div><!--navbar-->
    </div><!--footer-->
  </div><!--page-->
- 
+
 	<script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
- 	 
+
 	<script src="js/phone/rowingData.js"></script>
     <script src="js/phone/rowingDataArray.js"></script>
     <script src="js/phone/logController.js"></script>
@@ -1086,9 +1087,9 @@
     <script src="js/phone/upload.js"></script>
     <script src="js/phone/pieceResult.js"></script>
     <script src="js/phone/wellbeing.js"></script>
-    <script src="js/phone/socialMedia.js"></script>     
+    <script src="js/phone/socialMedia.js"></script>
     <script src="js/phone/manualEntry.js"></script>
-  
+
 	<!-- <script src="js/phonemin/js/rowingData-min.js"></script>
      <script src="js/phonemin/js/rowingDataArray-min.js"></script>
      <script src="js/phonemin/js/logController-min.js"></script>
@@ -1101,7 +1102,7 @@
      <script src="js/phonemin/js/pieceResult-min.js"></script>
      <script src="js/phonemin/js/wellbeing-min.js"></script>
      <script src="js/phonemin/js/socialMedia-min.js"></script>     -->
-     
+
 <script type="text/javascript">
        app.initialize();
      </script>
