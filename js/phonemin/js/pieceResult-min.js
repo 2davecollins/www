@@ -1,0 +1,5 @@
+/* © Clarify Cloud Limited 2013, 2014
+All Rights Reserved
+No part of this material or any of its contents may be reproduced, copied, modified or adapted, without prior written consent from Clarify Cloud Limited.
+*/
+var pieceNo=0;var results={resultsDisply:function(){$("#tpId").text(dataItem.TP_Name);$("#tpDes").text(dataItem.TP_Description);$("#sesId").text(dataItem.S_Name);$("#sesDes").text(dataItem.S_Description);$("#SDate").text("Date : "+dataItem.S_Date);$("#SMode").text("Mode : "+dataItem.S_Mode);$("#STZone").text(dataItem.S_TrainingZone);$("#ModeBName").text(dataItem.S_ModeBName);$("#ModeBType").text(dataItem.S_ModeBType)},getPieceData:function(){ResultArray=new Array();dataItem.dist=$("#distanceTarget").text();dataItem.time=$("#timeTarget").text();dataItem.stkTGT=$("#strokeTarget").text();dataItem.stkAvg=97;dataItem.hrtTGT=$("#heartTarget").text();dataItem.hrkAvg=96;pieceNo++;ResultArray.push({No:pieceNo,Dist:dataItem.dist,Time:dataItem.time,StkTarget:dataItem.stkTGT,StkAverage:dataItem.stkAvg,HrtTarget:dataItem.hrtTGT,HrtAverage:dataItem.hrtTGT});$("#pieceResultTmpl").tmpl(ResultArray).appendTo("#pieceResultList")}};
